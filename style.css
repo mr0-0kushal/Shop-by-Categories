@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sans-serif";
+}
+
+.main {
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+.heading hr {
+    width: 200px;
+    height: 3px;
+    outline: none;
+    border: none;
+}
+
+.heading h2 {
+    margin: 20px;
+}
+
+.heading .hr-right {
+    background: linear-gradient(to left, #e9acb600, #e9acb646, #e9acb6bd, #E9ACB6);
+}
+
+.heading .hr-left {
+    background: linear-gradient(to right, #e9acb600, #e9acb646, #e9acb6bd, #E9ACB6);
+}
+
+.content {
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    width: 50%;
+    height: 90%;
+    box-sizing: border-box;
+    place-content: center;
+    z-index: 2;
+}
+
+.categories-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.categories-item .label {
+    background-color: #cc7c7dc9;
+    width: 100%;
+    height: 100%;
+    max-height: 40px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    transition: max-height 1s ease;
+    overflow: hidden;
+}
+
+.categ .eyes {
+    background-image: url(/images/Eyes.webp);
+}
+
+.categ .face {
+    background-image: url(/images/Face.jpg);
+}
+
+.categ .lips {
+    background-image: url(/images/Lips.webp);
+}
+
+.categ .skincare {
+    background-image: url(/images/SkinCare.webp);
+}
+
+.categ .nails {
+    background-image: url(/images/Nails.webp);
+}
+
+.categ .brush {
+    background-image: url(/images/Brush.webp);
+}
+
+.categories-item:hover .label {
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Resposiveness */
+@media screen and (max-width:1024px) {
+    .main {
+        height: 100vh;
+        background-size: auto;
+        background-clip: content-box;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+    .categories-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        width: 30%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:710px){
+    .main {
+        height: 150vh;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+    .categories-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 20px;
+        width: 30%;
+        height: 100%;
+    }
+    .heading{
+        width: 100vw;
+        font-size: 14px;
+    }
+    .heading h2{
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width:560px){
+    .heading{
+        width: 100vw;
+        font-size: 10px;
+    }
+    .heading hr{
+        width: 400px;
+    }
+
+}
