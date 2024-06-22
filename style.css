@@ -44,6 +44,34 @@ body{
     flex-direction: row;
     gap: 200px;
 }
+.notifi h4{
+    font-size: 2em;
+    color:white;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #ff647e,
+            0 0 40px #ff647e,
+            0 0 50px #ff647e,
+            0 0 60px #ff647e,
+            0 0 70px #ff647e;
+    }
+    to {
+        text-shadow:
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px #ff647e,
+            0 0 50px #ff647e,
+            0 0 60px #ff647e,
+            0 0 70px #ff647e,
+            0 0 80px #ff647e;
+    }
+}
 .heading {
     display: flex;
     flex-direction: row;
