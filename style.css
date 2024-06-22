@@ -44,34 +44,6 @@ body{
     flex-direction: row;
     gap: 200px;
 }
-.notifi h4{
-    font-size: 2em;
-    color:white;
-    animation: neon-glow 2s ease infinite alternate;
-}
-
-@keyframes neon-glow {
-    from {
-        text-shadow:
-            0 0 10px #fff,
-            0 0 20px #fff,
-            0 0 30px #ff647e,
-            0 0 40px #ff647e,
-            0 0 50px #ff647e,
-            0 0 60px #ff647e,
-            0 0 70px #ff647e;
-    }
-    to {
-        text-shadow:
-            0 0 20px #fff,
-            0 0 30px #fff,
-            0 0 40px #ff647e,
-            0 0 50px #ff647e,
-            0 0 60px #ff647e,
-            0 0 70px #ff647e,
-            0 0 80px #ff647e;
-    }
-}
 .heading {
     display: flex;
     flex-direction: row;
@@ -189,10 +161,12 @@ body{
         height: 100vh;
         background-size: auto;
         background-clip: content-box;
+        overflow-x: hidden;
     }
     .content{
         width: 100%;
         height: 100%;
+        overflow-x: hidden;
     }
     .categories-container {
         grid-template-columns: repeat(2, 1fr);
@@ -213,10 +187,12 @@ body{
     }
     .main {
         height: 150vh;
+        overflow-x: hidden;
     }
     .content{
         width: 100%;
         height: 100%;
+        overflow-x: hidden;
     }
     .categories-container {
         grid-template-columns: repeat(1, 1fr);
