@@ -178,6 +178,7 @@ body{
     .categories-item{
         width: 100%;
         height: 80%;
+        font-size: 20px;
     }
     .notifi{
         gap: 200px;
@@ -199,7 +200,6 @@ body{
         width: 100%;
         height: 100%;
         overflow-x: hidden;
-        background-color: #e9acb691;
     }
     .categories-container {
         grid-template-columns: repeat(1, 1fr);
@@ -209,6 +209,7 @@ body{
         height: 100%;
     }
     .categories-item{
+        font-size: 15px;
         width: 100%;
     }
     .heading{
@@ -237,6 +238,6 @@ body{
     }
     .notifi{
         gap: 100px;
-        font-size: 10px;
+        font-size: 15px;
     }
 }
