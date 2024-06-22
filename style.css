@@ -192,11 +192,14 @@ body{
     .main {
         height: 150vh;
         overflow-x: hidden;
+        background: none;
+
     }
     .content{
         width: 100%;
         height: 100%;
         overflow-x: hidden;
+        background-color: #e9acb691;
     }
     .categories-container {
         grid-template-columns: repeat(1, 1fr);
