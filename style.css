@@ -47,7 +47,7 @@ body{
 .notifi h4{
     font-size: 2em;
     color:white;
-    animation: neon-glow 1.5s ease-in-out infinite alternate;
+    animation: neon-glow 2s ease infinite alternate;
 }
 
 @keyframes neon-glow {
