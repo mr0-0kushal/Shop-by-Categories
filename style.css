@@ -5,7 +5,11 @@
     padding: 0;
     font-family: "Poppins", "sans-serif";
 }
-
+body{
+    width: 100vw;
+    height: 150vh;
+    overflow-x: hidden;
+}
 .main {
     width: 100vw;
     height: 80vh;
@@ -18,6 +22,27 @@
     background-image: url(/images/background.svg);
     background-position: center;
     background-size:cover;
+}
+.secondmain{
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subheading{
+    font-size: 25px;
+    font-weight: 500;
+}
+.notifi{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 300px;
 }
 .heading {
     display: flex;
@@ -151,6 +176,9 @@
 }
 
 @media screen and (max-width:710px){
+    body{
+        overflow-x: hidden;
+    }
     .main {
         height: 150vh;
     }
@@ -175,6 +203,9 @@
 }
 
 @media (max-width:560px){
+    body{
+        overflow-x: hidden;
+    }
     .heading{
         width: 100vw;
         font-size: 10px;
